@@ -74,9 +74,10 @@ Para testar o funcionamento da rede e dos serviços que serão concretizados é 
 
 A rede está configurada para o Kathará, mas não estão configurados os mecanismos de segurança. O projeto consiste em implementar 4 tipos de mecanismos de segurança: VPN, SSH, firewall (packet filter) e detetor de intrusões.
 
-Duas *recomendações importantes*:
+*Recomendações importantes*:
 *  A ordem da configuração dos mecanismos de segurança não é arbitrária. Recomenda-se que seja feita pela ordem que se segue. Por exemplo, a configuração da VPN é a mais complicada por isso deve ser a primeira. As firewalls podem interferir com a VPN e com o SSH, de modo que devem ser posteriores a ambas. 
 *  O grupo deve ir tomando notas e preenchendo o questionário à medida que vai resolvendo o projecto. O questionário documenta o trabalho feito, logo é melhor não o deixar para o fim.
+*  A configuração da sucursal Caixinha2 é parecida com a da Caixinha1, logo pode ser deixada para o final. 
 
 ## VPN - OpenVPN
 
