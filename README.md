@@ -65,7 +65,7 @@ A primeira tarefa de cada grupo consiste em fazer essa substituição e fazer um
 
 # Testes
 
-Para testar o funcionamento da rede e dos serviços que serão concretizados é fundamental usar ferramentas de teste adequadas. Além de comandos bem conhecidos como o *ping*, o *tcpdump*, o *traceroute*, o *tcpdump* e o *nmap*, recomenda-se o uso do *netcat (nc)* que permite estabelecer conexões TCP e enviar texto sobre essa conexão:
+Para testar o funcionamento da rede e dos serviços que serão concretizados é fundamental usar ferramentas de teste adequadas. Além de comandos bem conhecidos como o *ping*, o *tcpdump*, o *traceroute* e o *nmap*, recomenda-se o uso do *netcat (nc)* que permite estabelecer conexões TCP e enviar texto sobre essa conexão:
 *	Para ficar à escuta numa porta na máquina de destino (servidor): `nc -l -p <porta>`
 *	Para enviar pacote TCP executar no client: `echo <string_a_enviar> | nc <ip_destino> <porta_destino>`
 *	A string deve aparecer no terminal do servidor.
@@ -113,8 +113,8 @@ Configure estas firewalls usando o netfilter / iptables [1][12][15] de modo a co
         * da Internet, i.e., externos ao banco (via HTTP claro) e 
         * do próprio banco (neste caso via HTTP e SSH);
     *	podem aceder ao servidor de ficheiros file-server1.
-*	Nenhum pacote pode entrar na sede ou das sucursais com um endereço IP de origem da gama de endereços dessas subredes (para bloquear IP Spoofing [11]);
-*	Nenhum pacote pode sair da sede ou das sucursais com um endereço IP de origem fora da gama de endereços dessas subredes
+*	Nenhum pacote pode entrar na sede ou nas sucursais com um endereço IP de origem da gama de endereços dessas subredes (para bloquear IP Spoofing [11]);
+*	Nenhum pacote pode sair da sede ou nas sucursais com um endereço IP de origem fora da gama de endereços dessas subredes
 
 Teste se cada firewall está a bloquear todo o tráfego que deve bloquear. Para testar se uma firewall está a negar o acesso a uma porta podem testar essa mesma porta usando o netcat.
 
